@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  background-color: #2e7d32;
+  color: #e8f5e9;
+  padding: 20px 30px;
+  text-align: center;
+  box-shadow: 0 -4px 8px rgba(46, 125, 50, 0.2);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+:host p {
+  margin: 0;
+}

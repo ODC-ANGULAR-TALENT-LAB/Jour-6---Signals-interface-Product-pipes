@@ -1,0 +1,14 @@
+import { Component, signal } from '@angular/core';
+import { Header } from './components/header/header';
+import { Container } from './components/container/container';
+import { Footer } from './components/footer/footer';
+
+@Component({
+  selector: 'app-root',
+  imports: [Header, Container, Footer],
+  templateUrl: './app.html',
+  styleUrls: ['./app.css']
+})
+export class App {
+  protected readonly title = signal('shop-app');
+}

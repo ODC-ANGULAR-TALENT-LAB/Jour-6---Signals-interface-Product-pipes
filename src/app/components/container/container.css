@@ -1,0 +1,26 @@
+:host {
+  flex: 1;
+  display: block;
+  background-color: #ffffff;
+  color: #1b1b1b;
+  padding: 24px;
+}
+
+.container-title {
+  margin: 0 0 24px;
+  text-align: center;
+  color: #2e7d32;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  :host {
+    padding: 16px;
+  }
+
+  .container-title {
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+  }
+}
