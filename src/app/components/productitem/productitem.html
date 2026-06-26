@@ -1,5 +1,6 @@
 <article class="product-card">
   <img class="product-image" [src]="product().imageUrl" [alt]="product().name" />
+  <span class="product-tag">{{ product().categories[0] | lowercase }}</span>
   <h3 class="product-name">{{ product().name | uppercase }}</h3>
   <p class="product-description">{{ product().description }}</p>
 

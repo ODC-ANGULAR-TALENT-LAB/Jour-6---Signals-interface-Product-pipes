@@ -32,8 +32,22 @@
   background-color: #e8f5e9;
 }
 
+.product-tag {
+  align-self: flex-start;
+  margin: 12px 16px 0;
+  padding: 3px 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  color: #1b5e20;
+  background: #e8f5e9;
+  border: 1px solid rgba(46, 125, 50, 0.25);
+  border-radius: 999px;
+}
+
 .product-name {
-  margin: 14px 16px 6px;
+  margin: 8px 16px 6px;
   color: #1b1b1b;
   font-size: 1.05rem;
   font-weight: 700;
