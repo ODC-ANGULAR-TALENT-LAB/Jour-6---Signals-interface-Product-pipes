@@ -81,5 +81,15 @@ export class Productlist {
       createdAt: new Date('2026-05-02'),
       categories: ['accessoire', 'bijou'],
     },
+    {
+      id: 8,
+      name: 'Coiffe perlée de chefferie',
+      description: 'Chapeau royal Bamoun perlé à motif d’éléphant et cauris',
+      soldPrice: 28000,
+      regularPrice: 38000,
+      imageUrl: 'assets/images/Products/artisanat/coiffe-perlee-bamoun.jpg',
+      createdAt: new Date('2026-05-20'),
+      categories: ['accessoire', 'coiffe', 'perles'],
+    },
   ]);
 }
