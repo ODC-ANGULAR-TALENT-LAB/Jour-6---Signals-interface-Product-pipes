@@ -1,4 +1,15 @@
-<div class="brand">SHOP</div>
+<a class="brand" routerLink="/home" (click)="closeMenu()" aria-label="SHOP 237 — Accueil">
+  <span class="brand-mark" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 7h12l-1 13H7L6 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+      <path d="M9 9V6a3 3 0 0 1 6 0v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+    </svg>
+  </span>
+  <span class="brand-text">
+    <span class="brand-name">SHOP<span class="brand-accent">237</span></span>
+    <span class="brand-tagline">Artisanat camerounais</span>
+  </span>
+</a>
 
 <button
   class="menu-toggle"
@@ -15,9 +26,26 @@
 
 <nav id="main-navigation" [class.open]="isMenuOpen()">
   <ul>
-    <li><a routerLink="/home" (click)="closeMenu()">Home</a></li>
-    <li><a routerLink="/products" (click)="closeMenu()">Products</a></li>
-    <li><a routerLink="/blog" (click)="closeMenu()">Blog</a></li>
-    <li><a routerLink="/contact" (click)="closeMenu()">Contact</a></li>
+    <li><a routerLink="/home" routerLinkActive="active" (click)="closeMenu()">Home</a></li>
+    <li><a routerLink="/products" routerLinkActive="active" (click)="closeMenu()">Products</a></li>
+    <li><a routerLink="/blog" routerLinkActive="active" (click)="closeMenu()">Blog</a></li>
+    <li><a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a></li>
   </ul>
 </nav>
+
+<div class="header-actions">
+  <button class="icon-btn" type="button" aria-label="Rechercher un produit">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8" />
+      <path d="m20 20-3.2-3.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+    </svg>
+  </button>
+  <button class="icon-btn icon-btn--cart" type="button" aria-label="Voir le panier">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M3 4h2l2.2 11.2a1.5 1.5 0 0 0 1.5 1.2h8.1a1.5 1.5 0 0 0 1.5-1.2L21 8H6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="9.5" cy="20" r="1.4" fill="currentColor" />
+      <circle cx="17.5" cy="20" r="1.4" fill="currentColor" />
+    </svg>
+    <span class="cart-badge">{{ cartCount() }}</span>
+  </button>
+</div>
